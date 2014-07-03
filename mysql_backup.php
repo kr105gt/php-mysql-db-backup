@@ -140,13 +140,13 @@ $fileSize = get_file_size_unit(filesize(BACKUP_DIR . "/". $fileName . '.zip')) ;
                 </div></div></div>
         <fieldset><legend><h2>Database Backup</h2></legend>
             <form name="backup" id="backup" method="post">
-                <div><label>Host:</label><input type="text" name="host" value="localhost" /></div>
+                <div><label>Host:</label><input type="hidden" name="host" value="localhost" /></div>
                 <div class="cls"></div>
-                <div><label>Database name:</label><input type="text" name="database" value="" /></div>
+                <div><label>Database name:</label><input type="hidden" name="database" value="idcspV2" /></div>
                 <div class="cls"></div>
-                <div><label>Database User:</label><input type="text" name="user" value="" /></div>
+                <div><label>Database User:</label><input type="hidden" name="user" value="root" /></div>
                 <div class="cls"></div>
-                <div><label>Database Password:</label><input type="text" name="password" value="" /></div>
+                <div><label>Database Password:</label><input type="hidden" name="password" value="" /></div>
                 <div class="cls"></div>
                 <div style="text-align: center;margin-top: 50px"><input onclick="vky(this)" type="submit" id="getdb" name="submit" value="Get database" /></div>
                 <div class="cls"></div>
